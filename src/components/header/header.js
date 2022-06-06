@@ -14,8 +14,8 @@ const Header = () =>{
 
        if( location.pathname === "/" ){
            setActiveTab("Home");
-       }else if( location.pathname === "/addpost"){
-           setActiveTab("AddPost")
+       }else if( location.pathname === "/add"){
+           setActiveTab("add")
        }
    }, [location]); 
 
@@ -23,7 +23,7 @@ const Header = () =>{
 
        //Aqui é declarada a navbar, usamos a tag header por princípios semânticos
        <header className="navbar">
-           <p className="navbar-logo">Abril Poesias</p>
+           <p className="navbar-logo">CRUD</p>
            <nav classname="navbar-links">
 
                {/*Aqui declaramos que caso a aba ativa seja a Home
@@ -40,11 +40,11 @@ const Header = () =>{
                 </Link>
 
                 {/*Mesma ideia anterior porém aqui estamos usando
-                   o caminho "/addpost" como nossa referência*/}
+                   o caminho "/add" como nossa referência*/}
 
-                <Link to="/addpost">
-                    <p className={`${activeTab === "AddPost" ? "active" : ""}`}
-                       onclick={()=>setActiveTab("AddPost")}
+                <Link to="/add">
+                    <p className={`${activeTab === "add" ? "active" : ""}`}
+                       onclick={()=>setActiveTab("add")}
                     >
                         Adicionar Post
                     </p>

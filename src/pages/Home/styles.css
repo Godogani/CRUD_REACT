@@ -1,0 +1,15 @@
+.table{
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-col{
+    flex: 1;
+}
+.table-row:first-child{
+    background-color: white;
+    color: black;
+}
