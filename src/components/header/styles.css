@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #fff;
+}
+.navbar-logo{
+    font-size: 25px;
+    padding: 12px 24px;
+    color: #fff;
+    letter-spacing: 3px;
+    background-color: #5d17df;
+    border-radius: 14% 86% 29% 71% / 50% 0% 100% 50%;
+}
+.active{
+    padding: 12px 24px;
+    background-color: #5d17df;
+    border-radius: 4%;
+    color: #fff;
+}
+.navbar-links{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+}
